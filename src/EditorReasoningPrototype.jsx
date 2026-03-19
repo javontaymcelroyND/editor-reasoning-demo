@@ -667,7 +667,7 @@ const InstructionScreen = ({ onSubmit }) => {
   return (
     <div style={{ display: "flex", flexDirection: "column", height: "100%" }}>
       <div style={{ flex: 1, padding: "0 16px" }}>
-        <div style={{ marginBottom: 16 }}>
+        <div style={{ marginBottom: 16, marginTop: 16 }}>
           <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 8 }}>
             <span style={{ fontSize: 13, fontWeight: 600, color: "#111827" }}>Instruction 1</span>
           </div>
@@ -683,12 +683,6 @@ const InstructionScreen = ({ onSubmit }) => {
             }}
           />
         </div>
-        <button style={{
-          display: "flex", alignItems: "center", gap: 4, background: "none",
-          border: "none", color: "#6b7280", fontSize: 13, cursor: "pointer", padding: 0,
-        }}>
-          <span style={{ fontSize: 18, lineHeight: 1 }}>+</span> Add instruction
-        </button>
       </div>
       <div style={{
         display: "flex", alignItems: "center", gap: 8, padding: "12px 16px",
@@ -921,7 +915,7 @@ const SidePanel = ({ screen, onSubmit, onNewSession, onHighlight, editStates, on
         padding: "6px 16px", background: "#fef3c7", borderTop: "1px solid #fde68a",
         fontSize: 11, color: "#92400e", textAlign: "center", fontWeight: 500,
       }}>
-        Lo-fi Prototype — AI Reasoning via Document Comments
+        Lo-fi Prototype — Ingesting Word Comments within Editor
       </div>
     </div>
   );
